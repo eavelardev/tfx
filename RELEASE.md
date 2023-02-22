@@ -4,6 +4,8 @@
 
 ## Breaking Changes
 
+*   `Placeholder` (and `_PlaceholderOperator`) are no longer `Jsonable`.
+
 ### For Pipeline Authors
 
 *   `placeholder.Placeholder.placeholders_involved()` was replaced with
@@ -12,7 +14,6 @@
     `channel_utils.get_dependent_channels(Placeholder)`.
 *   `placeholder.Predicate.encode_with_keys(...)` was replaced with
     `channel_utils.encode_placeholder_with_channels(Placeholder, ...)`.
-
 *   `placeholder.Predicate.from_comparison()` removed (was deprecated)
 
 ### For Component Authors
